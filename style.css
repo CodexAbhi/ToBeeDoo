@@ -1,5 +1,189 @@
 body {
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Space Grotesk', Arial;
     background-color: #000000 ;
+    padding: 90px 120px;
+    margin: 0;
     color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.radial-circle {
+    position: absolute;
+    width: 1548px;
+    height: 1548px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #96FC04 0%, rgba(0,0,0,0) 100%);
+    opacity: 0.1;
+    filter: blur(80px);
+    z-index: 0;
+}
+
+.radial-circle.one {
+  left: -640px;
+  top: 290px;
+}
+
+.radial-circle.two {
+  left: 789px;
+  top: -472px;
+}
+
+.container {
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+
+.header {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin: 0 auto 10px auto;;
+    position: relative;
+    z-index: 1;
+}
+
+.logo {
+    height: 61px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    height: 36px;
+    width: 36px;
+}
+
+.title h1{
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+}
+.subtext p{
+    margin: 0px;
+    font-size: 20px;
+}
+
+.green-line {
+    width: 100%;
+    height: 1px;
+    background-color: #96FC04;
+    margin-top: 30px;
+}
+
+.box {
+    width:100%;
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 0;
+    align-items: center;
+}
+
+.box button {
+    height: 46px;
+    width: 50px; /* consistent width for all */
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    border: 1px solid rgba(255,255,255,0.2);
+    cursor: pointer;
+    padding: 0; /* avoid padding affecting size */
+    flex-shrink: 0; /* prevent shrinking */
+}
+
+/* Margins for specific buttons */
+.task-done-button {
+    margin-right: 10px;
+    background-color: #1b1b1b;
+}
+
+.task-delete-button {
+    margin-right: 30px;
+    background-color: #1b1b1b;
+}
+
+.add-task-button {
+    margin-right: 30px;
+    background-color: transparent;
+}
+
+.add-task {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.add-task input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    color: rgba(255,255,255,0.5);
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: 'Space Grotesk', Arial;
+}
+
+.add-task input:focus {
+    outline: none;
+    color: white;
+    font-family: 'Space Grotesk', Arial;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.task p {
+    margin: 0 30px;
+    width: 100%;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.task-division {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.task-division p{
+    margin: 0 30px;
+    width: 100%;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.completed-task {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.completed-task p {
+    margin: 0 30px;
+    width: 100%;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.2);
+    text-decoration: line-through;
+}
+
+.completed-task button {
+    background-color: rgba(27,27,27,0.4);
 }

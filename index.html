@@ -2,12 +2,99 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1920px, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToBeeDoo</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="static/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    Hey there! This is a placeholder for the ToBeeDoo app.
+    <div class="radial-circle one"></div>
+    <div class="radial-circle two"></div>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <img src="static/favicon.svg" alt="ToBeeDoo Logo">
+            </div>
+            <div class="title">
+                <h1>ToDo List</h1>
+            </div>
+        </div>
+        <div class="subtext">
+            <p>Stay organized and focused with a task manager that just makes sense.</p>
+        </div>
+        <div class="green-line"></div>
+        <div class="upper-deck">
+            <div class="box">
+                <div class="add-task">
+                    <input type="text" id="task-input" placeholder="ADD TASK">
+                    <button class="add-task-button" id="add-task-button">
+                        <img src="static/plus.svg" alt="Add Task">
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="task">
+                    <p>go to shopping with mum</p>
+                    <button class="task-done-button" id="task-done-button">
+                        <img src="static/done.svg" alt="Mark as Done">
+                    </button>
+                    <button class="task-delete-button" id="task-delete-button">
+                        <img src="static/delete.svg" alt="Delete Task">
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="task">
+                    <p>make a todo list application on web</p>
+                    <button class="task-done-button" id="task-done-button">
+                        <img src="static/done.svg" alt="Mark as Done">
+                    </button>
+                    <button class="task-delete-button" id="task-delete-button">
+                        <img src="static/delete.svg" alt="Delete Task">
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="task">
+                    <p>call for recruiters</p>
+                    <button class="task-done-button" id="task-done-button">
+                        <img src="static/done.svg" alt="Mark as Done">
+                    </button>
+                    <button class="task-delete-button" id="task-delete-button">
+                        <img src="static/delete.svg" alt="Delete Task">
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="task-division">
+                    <p>COMPLETED TASKS</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="completed-task">
+                    <p>call for recruiters</p>
+                    <button class="task-done-button" id="task-done-button">
+                        <img src="static/revert.svg" alt="Mark as Done">
+                    </button>
+                    <button class="task-delete-button" id="task-delete-button">
+                        <img src="static/dull-delete.svg" alt="Delete Task">
+                    </button>
+                </div>
+            </div>
+            <div class="box">
+                <div class="completed-task">
+                    <p>one more task</p>
+                    <button class="task-done-button" id="task-done-button">
+                        <img src="static/revert.svg" alt="Mark as Done">
+                    </button>
+                    <button class="task-delete-button" id="task-delete-button">
+                        <img src="static/dull-delete.svg" alt="Delete Task">
+                    </button>
+                </div>
+            </div>
+    </div>
 </body>
 </html>
