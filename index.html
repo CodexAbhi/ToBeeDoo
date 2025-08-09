@@ -28,76 +28,29 @@
             <p>Stay organized and focused with a task manager that just makes sense.</p>
         </div>
         <div class="green-line"></div>
-        <div class="upper-deck">
-            <div class="box">
-                <div class="add-task">
-                    <input type="text" id="task-input" placeholder="ADD TASK">
-                    <button class="add-task-button" id="add-task-button" onclick="addTask()">
-                        <img src="static/plus.svg" alt="Add Task">
-                    </button>
-                </div>
+
+        <!-- Input Section -->
+        <div class="box">
+            <div class="add-task">
+                <input type="text" id="task-input" placeholder="ADD TASK">
+                <button class="add-task-button" id="add-task-button">
+                    <img src="static/plus.svg" alt="Add Task">
+                </button>
             </div>
-            <div class="box">
-                <div class="task">
-                    <p>go to shopping with mum</p>
-                    <button class="task-done-button" id="task-done-button">
-                        <img src="static/done.svg" alt="Mark as Done">
-                    </button>
-                    <button class="task-delete-button" id="task-delete-button">
-                        <img src="static/delete.svg" alt="Delete Task">
-                    </button>
-                </div>
+        </div>
+
+        <!-- Active Tasks -->
+        <div id="task-list"></div>
+
+        <!-- Completed Tasks -->
+        <div class="box" style="margin-top: 20px">
+            <div class="task-division">
+                <p>COMPLETED TASKS</p>
             </div>
-            <div class="box">
-                <div class="task">
-                    <p>make a todo list application on web</p>
-                    <button class="task-done-button" id="task-done-button">
-                        <img src="static/done.svg" alt="Mark as Done">
-                    </button>
-                    <button class="task-delete-button" id="task-delete-button">
-                        <img src="static/delete.svg" alt="Delete Task">
-                    </button>
-                </div>
-            </div>
-            <div class="box">
-                <div class="task">
-                    <p>call for recruiters</p>
-                    <button class="task-done-button" id="task-done-button">
-                        <img src="static/done.svg" alt="Mark as Done">
-                    </button>
-                    <button class="task-delete-button" id="task-delete-button">
-                        <img src="static/delete.svg" alt="Delete Task">
-                    </button>
-                </div>
-            </div>
-            <div class="box" style="margin-top: 20px">
-                <div class="task-division">
-                    <p>COMPLETED TASKS</p>
-                </div>
-            </div>
-            <div class="box">
-                <div class="completed-task">
-                    <p>call for recruiters</p>
-                    <button class="task-done-button" id="task-done-button">
-                        <img src="static/revert.svg" alt="Mark as Done">
-                    </button>
-                    <button class="task-delete-button" id="task-delete-button">
-                        <img src="static/dull-delete.svg" alt="Delete Task">
-                    </button>
-                </div>
-            </div>
-            <div class="box">
-                <div class="completed-task">
-                    <p>one more task</p>
-                    <button class="task-done-button" id="task-done-button">
-                        <img src="static/revert.svg" alt="Mark as Done">
-                    </button>
-                    <button class="task-delete-button" id="task-delete-button">
-                        <img src="static/dull-delete.svg" alt="Delete Task">
-                    </button>
-                </div>
-            </div>
+        </div>
+        <div id="completed-list"></div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
